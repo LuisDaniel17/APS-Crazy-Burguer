@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+                           <style>
+                body { 
+                      background-color: powderblue;
+                      background-image: linear-gradient(to right, powderblue, azure);
+                }
+                 .titulo{
+                font-family: "Cooper";
+                font-size: 67px;
+                text-align: center;
+                color: indigo;
+            }
+             .texto{
+                font-family: "Cooper";
+                font-size: 17px;
+            }
+
+                </style>
+        <title>Cadastro de Cliente</title>
+    </h:head>
+    <h:body>
+        <h1 class="titulo">Cadastro de Cliente</h1>
+        <div align="center">
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText class="texto" value="Inserir os Dados"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel class="texto" value="Cpf:" for="cpf" />
+                    <h:inputText class="texto" id="cpf" value="#{clienteManagedBean.cliente.cpf}" title="Cpf" required="true" requiredMessage="The Cpf field is required."/>
+                    <h:outputLabel class="texto" value="Nome:" for="nome" />
+                    <h:inputText class="texto" id="nome" value="#{clienteManagedBean.cliente.nome}" title="Nome" />
+                    <h:outputLabel class="texto" value="Telefone:" for="telefone" />
+                    <h:inputText class="texto" id="telefone" value="#{clienteManagedBean.cliente.telefone}" title="Telefone" />
+                    <h:outputLabel class="texto" value="Celular:" for="celular" />
+                    <h:inputText class="texto" id="celular" value="#{clienteManagedBean.cliente.celular}" title="Celular" />
+                    <h:outputLabel class="texto" value="Email:" for="email" />
+                    <h:inputText class="texto" id="email" value="#{clienteManagedBean.cliente.email}" title="Email" />
+                    <h:outputLabel class="texto" value="Senha:" for="senha" />
+                    <h:inputText class="texto" id="senha" value="#{clienteManagedBean.cliente.senha}" title="Senha" />
+                    
+                     
+                    
+                </h:panelGrid>
+                
+                <h:commandButton class="texto" id="cadastrar" value="Cadastrar" action="#{clienteManagedBean.inserir()}"/>
+                
+            </h:form>
+        </f:view>
+
+        </div>
+        
+    </h:body>
+</html>
+

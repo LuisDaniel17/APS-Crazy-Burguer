@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+   
+    <h:head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/lib/w3.css"></link>
+ 
+
+
+  
+<style>
+ body { 
+ width:1420px;
+ height:1540px;
+  background-color: purple;
+  background-image: linear-gradient(to right, darkblue, lightblue);
+  
+ }
+
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 1500px;
+      margin: auto;
+      height:500px;
+  
+ .tab{
+                width:400px; 
+                height:400px;
+            }
+
+</style>  
+        <title>Home</title>
+    </h:head>
+    <body>
+        <h1 style="color:orangered" align="center" ><font face="Cooper">Bem - Vindo a lanchonete Crazy Burguer</font></h1>
+        <div align="center">
+<div class="container" align="center" >
+ 
+  <div id="myCarousel" class="carousel slide">
+    
+  <ul class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+    </ul>
+
+   
+    <div  class="carousel-inner" role="listbox">
+
+      <div class="item active">
+          <img src="ca.jpg" alt="Cardápio" width="587" height="440"></img>
+        <div style=" background-attachment:scroll; background-color: inherit" class="carousel-caption">
+        <h3 style="float:left;margin-left:30px">Cardápio</h3><p>&nbsp;</p><p>&nbsp;</p>
+         <a href="http://localhost:8080/CrazyBurguer/lanchonete/Cardapio.xhtml" style="color:white"> <button class="button" style="float:left;  background:transparent; margin-left:50px">Clique Aqui</button></a>
+        
+        </div>
+        
+      </div>
+
+      <div class="item">
+        <img src="fasp.jpg" alt="Faça seu pedido" width="687" height="540"></img>
+        <div  class="carousel-caption">
+        
+          <h3 style="float:left">Faça seu Pedido</h3><p>&nbsp;</p><p>&nbsp;</p>
+        <a href="http://localhost:8080/CrazyBurguer/lanchonete/Login.xhtml" style="color:white">  <button class="button" style="float:left; background:transparent">Clique Aqui</button></a>
+        
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="cac.jpg" alt="Cadastro do cliente" width="660" height="445"></img>
+        <div style="border:thick" class="carousel-caption">
+          <h3 style="float:left">Cadastro Cliente</h3><p>&nbsp;</p><p>&nbsp;</p>
+        <a href="http://localhost:8080/CrazyBurguer/lanchonete/CadastroCliente.xhtml" style="color:white">  <button class="button" style="float:left;background:transparent">Clique Aqui</button></a>
+        </div>
+       
+      </div>
+
+      <div class="item">
+        <img src="qs.png" alt="Quem somos" width="560" height="345"></img>
+        <div style="border:thick" class="carousel-caption">
+          <h3 style="float:left; margin-left:50px">Quem Somos?</h3>
+           <p>&nbsp;</p><p>&nbsp;</p>
+        <a href="http://localhost:8080/CrazyBurguer/lanchonete/QuemSomos.xhtml" style="color:white">  <button class="button" style="float:left;background:transparent; margin-left:100px">Clique Aqui</button></a>
+        </div>
+      </div>
+  
+    </div>
+</div>
+
+</div>
+    </div>
+  
+
+<script>
+$(document).ready(function(){
+    
+    $("#myCarousel").carousel();
+    
+    
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+   
+});
+</script>
+        <div>
+          &nbsp;  
+            &nbsp;
+             &nbsp;
+        </div>
+    
+     
+        <table align="center">
+         <tr>
+             <td>
+            <img src="barbecue.png" alt="Lanche" width="500" height="400"></img>   
+             </td>
+             <td>
+                 <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+             <td>
+                   <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                      <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+             <td>
+                <img src="tradi.png" alt="Lanche" width="500" height="500" ></img>  
+             </td>
+              <td>
+                  <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+         </tr>
+         <tr>
+              <td>
+                 <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+              <td>
+                 <div class="tab">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                 </div>
+             </td>
+             <td>
+                <img src="l3.jpg" alt="Lanche" width="400" height="400"></img> 
+             </td>
+         </tr>
+     </table>
+        
+        <h1 style="color:orangered" align="center" ><font face="Cooper">A sua satisfação é o nosso prazer</font></h1>
+        
+    </body>
+</html>
+

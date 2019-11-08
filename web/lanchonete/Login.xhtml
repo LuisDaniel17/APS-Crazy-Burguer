@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <h:head>
+            <title>Login</title>
+                    <style>
+                body { 
+                      background-color: silver;
+                      background-image: linear-gradient(to right, black, silver);
+                }
+                 .titulo{
+                font-family: "Cooper";
+                font-size: 67px;
+                text-align: center;
+                color: purple;
+            }
+             .texto{
+                font-family: "Cooper";
+                font-size: 17px;
+            }
+
+                </style>
+        </h:head>
+        <h:body>
+            <h1 class="titulo"> Login </h1>
+
+            <table align="center">
+   
+                          <tr>
+             <td>
+                 <a href="CadastroCliente.xhtml"> <img src="canto.png" width="400" height="400"></img></a>
+                 
+             </td>
+             <td>
+            <f:view>
+
+
+                <h:form>
+                   
+                    <h:panelGrid columns="2">
+                        <f:facet name="header"><p class="texto">Acesso do Cliente</p></f:facet>
+                        <h:outputLabel class="texto" value="E-mail: " />
+                        <h:inputText class="texto" id="email" value="#{login.email}" title="Email" />
+                        <h:outputLabel class="texto" value="Senha: "  />
+                        <h:inputText class="texto" id="senha" value="#{login.senha}" title="Senha" />
+                        <f:facet name="footer"></f:facet>
+                        <h:commandButton class="texto" id="Acessar" value="Acessar" action="#{login.vslida()}"/>
+                    </h:panelGrid>
+                    
+                </h:form>
+            </f:view>
+             </td>
+               <td>
+                   <img src="meme.png" width="400" height="400"></img>
+                
+             </td>
+                          </tr>
+                
+             </table>
+        </h:body>
+    </html>
+
